@@ -8,16 +8,16 @@ pub type URL = String;
 
 #[derive(GraphQLQuery)]
 #[graphql(
-	schema_path = "2023-04.json",
-	query_path = "graphql-queries/webhooks/subscriptions.graphql",
+	schema_path = "graphql/schemas/2023-04.json",
+	query_path = "graphql/queries/webhooks/subscriptions.graphql",
 	response_derives = "Debug"
 )]
 pub struct WebhookSubscriptions;
 
 #[derive(GraphQLQuery)]
 #[graphql(
-	schema_path = "2023-04.json",
-	query_path = "graphql-queries/webhooks/get.graphql",
+	schema_path = "graphql/schemas/2023-04.json",
+	query_path = "graphql/queries/webhooks/get.graphql",
 	response_derives = "Debug"
 )]
 pub struct WebhookSubscription;
