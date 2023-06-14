@@ -1,0 +1,18 @@
+query WebhookSubscriptions {
+  webhookSubscriptions(first: 10) {
+    nodes {
+      apiVersion {
+        displayName
+        handle
+        supported
+      }
+      createdAt
+      endpoint {
+        __typename
+      }
+      format
+      id
+      topic
+    }
+  }
+}
