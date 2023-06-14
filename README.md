@@ -1,0 +1,1 @@
+An unofficial SDK for Shopify's Admin API
